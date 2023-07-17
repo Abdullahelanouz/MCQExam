@@ -14,9 +14,16 @@ export class AuthService {
   createUser(model:any) {
     return this.http.post(environment.baseApi+'students' , model)
   }
+  login(model:any) {
+    return this.http.put(environment.baseApi+'login/1' , model)
+  }
 
   getUsers(type:string){
     return this.http.get(environment.baseApi+type)
+  }
+
+  getRole() {
+    return this.http.get(environment.baseApi+'login/1')
   }
 
 
