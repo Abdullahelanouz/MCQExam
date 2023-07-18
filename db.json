@@ -99,6 +99,20 @@
         }
       ],
       "id": 2
+    },
+    {
+      "name": "Math",
+      "questions": [
+        {
+          "question": "2+2",
+          "answer1": "1",
+          "answer2": "2",
+          "answer3": "3",
+          "answer4": "4",
+          "correctAnswer": "4"
+        }
+      ],
+      "id": 3
     }
   ],
   "login": [
