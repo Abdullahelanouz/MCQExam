@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './auth/services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MCQExam';
+  /**
+   *
+   */
+  constructor(private service:AuthService) { }
+  ngOnInit(): void {
+    this.getUserDate()
+  }
+  getUserDate() {
+    this.service.getRole().subscribe(res => {
+      this.service.user.next(res)
+    })
+
+
+  }
 }
