@@ -21,6 +21,13 @@ export class AuthService {
   getUsers(type:string){
     return this.http.get(environment.baseApi+type)
   }
+  getStudent(id:number) {
+    return this.http.get(environment.baseApi+"students/"+id)
+  }
+
+  updateStudent(id:number , model:any) {
+    return this.http.put(environment.baseApi+"students/"+id , model)
+  }
 
   getRole() {
     return this.http.get(environment.baseApi+'login/1')

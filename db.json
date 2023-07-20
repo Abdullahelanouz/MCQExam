@@ -52,6 +52,23 @@
       "username": "abdullah",
       "email": "abdullah@gmial.com",
       "password": "12345",
+      "subjects": [
+        {
+          "name": "اللغة العربية",
+          "id": "2",
+          "degree": 0
+        },
+        {
+          "name": "الرياضيات",
+          "id": "1",
+          "degree": 1
+        },
+        {
+          "name": "Math",
+          "id": "3",
+          "degree": 1
+        }
+      ],
       "id": 5
     }
   ],
@@ -88,16 +105,7 @@
     },
     {
       "name": "اللغة العربية",
-      "questions": [
-        {
-          "question": "تيست",
-          "answer1": "تيتسن",
-          "answer2": "يبل",
-          "answer3": "يبلي",
-          "answer4": "يبلي",
-          "correctAnswer": "تيتسن"
-        }
-      ],
+      "questions": [],
       "id": 2
     },
     {
@@ -117,6 +125,9 @@
   ],
   "login": [
     {
+      "username": "abdullah",
+      "role": "students",
+      "userId": 5,
       "id": 1
     }
   ]
