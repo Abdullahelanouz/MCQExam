@@ -14,8 +14,10 @@
           </div>
 
           <div class="col-md-6 col-sm-12">
-              <mat-radio-button *ngIf="user?.role == 'students' && !showResult && validExam" (change)="getAnswer($event)" name="{{index}}" value="{{item.answer3}}"  color="warn"></mat-radio-button>
+
+            <mat-radio-button *ngIf="user?.role == 'students' && !showResult && validExam" (change)="getAnswer($event)" name="{{index}}" value="{{item.answer3}}"  color="warn"></mat-radio-button>
               <label>C. {{item.answer3}}</label>
+
           </div>
 
           <div class="col-md-6 col-sm-12">
