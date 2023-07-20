@@ -125,9 +125,6 @@
   ],
   "login": [
     {
-      "username": "abdullah",
-      "role": "students",
-      "userId": 5,
       "id": 1
     }
   ]
